@@ -4,7 +4,7 @@ export default function App() {
   const [count, setCount] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const [products, setProducts] = useState([]);
-  const disabledButton = products && products.length >= 214;
+  const disabledButton = products.length >= 214;
 
   async function fetchProducts() {
     try {
